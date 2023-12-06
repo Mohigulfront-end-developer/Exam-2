@@ -1,0 +1,8 @@
+@use "../utils/variables" as var;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var.$primary-color;
+}

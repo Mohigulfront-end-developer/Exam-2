@@ -1,0 +1,36 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item button {
+  padding: 10px 40px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 100px;
+  gap: 10px;
+}
+
+.nav-link a {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.64px;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  border: 1px solid white;
+}
+
+footer {
+  background-color: #BB2339;
+}
+
+.footer__data {
+  margin-top: 50px;
+}

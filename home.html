@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>EATURKISH</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg position-sticky top-0 bg-danger">
+            <div class="container my-4">
+                <a href="#" class="navbar-brand"><img src="assets/icons/logo.svg" alt="EATURKISH logo"></a>
+                <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header bg-danger">
+            <a class="navbar-brand" href="#"
+              ><img src="assets/images/logo.png" alt=""
+            /></a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body bg-danger">
+            <ul
+              class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 pe-3"
+            >
+              <li class="nav-item m-2">
+                <a aria-current="page" class="nav-link text-white" href="pages/menu.html ">Menu</a
+                >
+              </li>
+              <li class="nav-item m-2">
+                <a class='nav-link text-white' href="pages/news.html">News</a>
+              </li>
+              <li class="nav-item m-2">
+                <a class='nav-link text-white' href="pages/about.html">About us</a>
+              </li>
+              <li class="nav-item m-2">
+                <a class='nav-link text-white' href="pages/about.html">Contact us</a>
+              </li>
+              <li class="nav-item m-2">
+                <button class="bg-danger">Log In</button>
+              </li>
+              <li class="nav-item">
+              <i id="toggleTheme" class="fa-solid fa-circle-half-stroke"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+       
+    </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero bg-danger ">
+            <div class="container d-flex justify-content-between">
+                <div class="hero__left">
+                    <h4>Chase the new Flavour</h4>
+                    <h1>The key to Fine dining</h1>
+                    <p>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+                    <button class="hero__btn bg-danger">
+                        <a href="pages/menu.html" class="hero__btn-link">Explore Menu</a>
+                    </button>
+                </div>
+                <div class="hero__right">
+                    <img src="assets/images/home-hero.png" class="kebab" alt="kebab">
+                </div>
+            </div>
+        </section>
+        <section class="popular__sec d-grid">
+            <div class="container">
+                <h2>Popular Dishes</h2>
+            <div class="row carousel gap-3">
+                <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <rect x="-0.5" y="0.5" width="39" height="39" rx="5.5" transform="matrix(-1 0 0 1 39 0)" stroke="#646464"/>
+        <path d="M25 30L15 20L25 10" stroke="#646464" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <rect x="0.5" y="0.5" width="39" height="39" rx="5.5" stroke="#BB2339"/>
+        <path d="M15 30L25 20L15 10" stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+        </button>
+                <div class="col card" style="width: 18rem;">
+                    <img src="assets/images/pop-dish-1.png" class="card-img-top pt-4" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="108" height="20" viewBox="0 0 108 20" fill="none">
+                        <path d="M9.42937 1.75623C9.60898 1.20344 10.391 1.20344 10.5706 1.75623L12.1104 6.49524C12.1908 6.74245 12.4211 6.90983 12.6811 6.90983H17.664C18.2452 6.90983 18.4869 7.6536 18.0166 7.99524L13.9854 10.9241C13.7751 11.0769 13.6871 11.3477 13.7674 11.5949L15.3072 16.3339C15.4868 16.8867 14.8541 17.3464 14.3839 17.0048L10.3527 14.0759C10.1424 13.9231 9.85762 13.9231 9.64733 14.0759L5.61609 17.0048C5.14586 17.3464 4.51317 16.8867 4.69278 16.3339L6.23258 11.5949C6.3129 11.3477 6.22491 11.0769 6.01462 10.9241L1.98337 7.99524C1.51315 7.6536 1.75481 6.90983 2.33605 6.90983H7.31893C7.57887 6.90983 7.80924 6.74245 7.88957 6.49524L9.42937 1.75623Z" fill="#FFEA28"/>
+                        <path d="M31.4294 1.75623C31.609 1.20344 32.391 1.20344 32.5706 1.75623L34.1104 6.49524C34.1908 6.74245 34.4211 6.90983 34.6811 6.90983H39.664C40.2452 6.90983 40.4869 7.6536 40.0166 7.99524L35.9854 10.9241C35.7751 11.0769 35.6871 11.3477 35.7674 11.5949L37.3072 16.3339C37.4868 16.8867 36.8541 17.3464 36.3839 17.0048L32.3527 14.0759C32.1424 13.9231 31.8576 13.9231 31.6473 14.0759L27.6161 17.0048C27.1459 17.3464 26.5132 16.8867 26.6928 16.3339L28.2326 11.5949C28.3129 11.3477 28.2249 11.0769 28.0146 10.9241L23.9834 7.99524C23.5131 7.6536 23.7548 6.90983 24.336 6.90983H29.3189C29.5789 6.90983 29.8092 6.74245 29.8896 6.49524L31.4294 1.75623Z" fill="#FFEA28"/>
+                        <path d="M53.4294 1.75623C53.609 1.20344 54.391 1.20344 54.5706 1.75623L56.1104 6.49524C56.1908 6.74245 56.4211 6.90983 56.6811 6.90983H61.664C62.2452 6.90983 62.4869 7.6536 62.0166 7.99524L57.9854 10.9241C57.7751 11.0769 57.6871 11.3477 57.7674 11.5949L59.3072 16.3339C59.4868 16.8867 58.8541 17.3464 58.3839 17.0048L54.3527 14.0759C54.1424 13.9231 53.8576 13.9231 53.6473 14.0759L49.6161 17.0048C49.1459 17.3464 48.5132 16.8867 48.6928 16.3339L50.2326 11.5949C50.3129 11.3477 50.2249 11.0769 50.0146 10.9241L45.9834 7.99524C45.5131 7.6536 45.7548 6.90983 46.336 6.90983H51.3189C51.5789 6.90983 51.8092 6.74245 51.8896 6.49524L53.4294 1.75623Z" fill="#FFEA28"/>
+                        <path d="M75.4294 1.75623C75.609 1.20344 76.391 1.20344 76.5706 1.75623L78.1104 6.49524C78.1908 6.74245 78.4211 6.90983 78.6811 6.90983H83.664C84.2452 6.90983 84.4869 7.6536 84.0166 7.99524L79.9854 10.9241C79.7751 11.0769 79.6871 11.3477 79.7674 11.5949L81.3072 16.3339C81.4868 16.8867 80.8541 17.3464 80.3839 17.0048L76.3527 14.0759C76.1424 13.9231 75.8576 13.9231 75.6473 14.0759L71.6161 17.0048C71.1459 17.3464 70.5132 16.8867 70.6928 16.3339L72.2326 11.5949C72.3129 11.3477 72.2249 11.0769 72.0146 10.9241L67.9834 7.99524C67.5131 7.6536 67.7548 6.90983 68.336 6.90983H73.3189C73.5789 6.90983 73.8092 6.74245 73.8896 6.49524L75.4294 1.75623Z" fill="#FFEA28"/>
+                        <path d="M97.4294 1.75623C97.609 1.20344 98.391 1.20344 98.5706 1.75623L100.11 6.49524C100.191 6.74245 100.421 6.90983 100.681 6.90983H105.664C106.245 6.90983 106.487 7.6536 106.017 7.99524L101.985 10.9241C101.775 11.0769 101.687 11.3477 101.767 11.5949L103.307 16.3339C103.487 16.8867 102.854 17.3464 102.384 17.0048L98.3527 14.0759C98.1424 13.9231 97.8576 13.9231 97.6473 14.0759L93.6161 17.0048C93.1459 17.3464 92.5132 16.8867 92.6928 16.3339L94.2326 11.5949C94.3129 11.3477 94.2249 11.0769 94.0146 10.9241L89.9834 7.99524C89.5131 7.6536 89.7548 6.90983 90.336 6.90983H95.3189C95.5789 6.90983 95.8092 6.74245 95.8896 6.49524L97.4294 1.75623Z" fill="#C1C1C1"/>
+                      </svg>
+                      <p class="card-price text-danger p-3">$12.00</p>
+                    </div>
+                  </div>
+                  <div class="col card" style="width: 18rem;">
+                    <img src="assets/images/pop-dish-2.png" class="card-img-top pt-4" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="108" height="20" viewBox="0 0 108 20" fill="none">
+                        <path d="M9.42937 1.75623C9.60898 1.20344 10.391 1.20344 10.5706 1.75623L12.1104 6.49524C12.1908 6.74245 12.4211 6.90983 12.6811 6.90983H17.664C18.2452 6.90983 18.4869 7.6536 18.0166 7.99524L13.9854 10.9241C13.7751 11.0769 13.6871 11.3477 13.7674 11.5949L15.3072 16.3339C15.4868 16.8867 14.8541 17.3464 14.3839 17.0048L10.3527 14.0759C10.1424 13.9231 9.85762 13.9231 9.64733 14.0759L5.61609 17.0048C5.14586 17.3464 4.51317 16.8867 4.69278 16.3339L6.23258 11.5949C6.3129 11.3477 6.22491 11.0769 6.01462 10.9241L1.98337 7.99524C1.51315 7.6536 1.75481 6.90983 2.33605 6.90983H7.31893C7.57887 6.90983 7.80924 6.74245 7.88957 6.49524L9.42937 1.75623Z" fill="#FFEA28"/>
+                        <path d="M31.4294 1.75623C31.609 1.20344 32.391 1.20344 32.5706 1.75623L34.1104 6.49524C34.1908 6.74245 34.4211 6.90983 34.6811 6.90983H39.664C40.2452 6.90983 40.4869 7.6536 40.0166 7.99524L35.9854 10.9241C35.7751 11.0769 35.6871 11.3477 35.7674 11.5949L37.3072 16.3339C37.4868 16.8867 36.8541 17.3464 36.3839 17.0048L32.3527 14.0759C32.1424 13.9231 31.8576 13.9231 31.6473 14.0759L27.6161 17.0048C27.1459 17.3464 26.5132 16.8867 26.6928 16.3339L28.2326 11.5949C28.3129 11.3477 28.2249 11.0769 28.0146 10.9241L23.9834 7.99524C23.5131 7.6536 23.7548 6.90983 24.336 6.90983H29.3189C29.5789 6.90983 29.8092 6.74245 29.8896 6.49524L31.4294 1.75623Z" fill="#FFEA28"/>
+                        <path d="M53.4294 1.75623C53.609 1.20344 54.391 1.20344 54.5706 1.75623L56.1104 6.49524C56.1908 6.74245 56.4211 6.90983 56.6811 6.90983H61.664C62.2452 6.90983 62.4869 7.6536 62.0166 7.99524L57.9854 10.9241C57.7751 11.0769 57.6871 11.3477 57.7674 11.5949L59.3072 16.3339C59.4868 16.8867 58.8541 17.3464 58.3839 17.0048L54.3527 14.0759C54.1424 13.9231 53.8576 13.9231 53.6473 14.0759L49.6161 17.0048C49.1459 17.3464 48.5132 16.8867 48.6928 16.3339L50.2326 11.5949C50.3129 11.3477 50.2249 11.0769 50.0146 10.9241L45.9834 7.99524C45.5131 7.6536 45.7548 6.90983 46.336 6.90983H51.3189C51.5789 6.90983 51.8092 6.74245 51.8896 6.49524L53.4294 1.75623Z" fill="#FFEA28"/>
+                        <path d="M75.4294 1.75623C75.609 1.20344 76.391 1.20344 76.5706 1.75623L78.1104 6.49524C78.1908 6.74245 78.4211 6.90983 78.6811 6.90983H83.664C84.2452 6.90983 84.4869 7.6536 84.0166 7.99524L79.9854 10.9241C79.7751 11.0769 79.6871 11.3477 79.7674 11.5949L81.3072 16.3339C81.4868 16.8867 80.8541 17.3464 80.3839 17.0048L76.3527 14.0759C76.1424 13.9231 75.8576 13.9231 75.6473 14.0759L71.6161 17.0048C71.1459 17.3464 70.5132 16.8867 70.6928 16.3339L72.2326 11.5949C72.3129 11.3477 72.2249 11.0769 72.0146 10.9241L67.9834 7.99524C67.5131 7.6536 67.7548 6.90983 68.336 6.90983H73.3189C73.5789 6.90983 73.8092 6.74245 73.8896 6.49524L75.4294 1.75623Z" fill="#FFEA28"/>
+                        <path d="M97.4294 1.75623C97.609 1.20344 98.391 1.20344 98.5706 1.75623L100.11 6.49524C100.191 6.74245 100.421 6.90983 100.681 6.90983H105.664C106.245 6.90983 106.487 7.6536 106.017 7.99524L101.985 10.9241C101.775 11.0769 101.687 11.3477 101.767 11.5949L103.307 16.3339C103.487 16.8867 102.854 17.3464 102.384 17.0048L98.3527 14.0759C98.1424 13.9231 97.8576 13.9231 97.6473 14.0759L93.6161 17.0048C93.1459 17.3464 92.5132 16.8867 92.6928 16.3339L94.2326 11.5949C94.3129 11.3477 94.2249 11.0769 94.0146 10.9241L89.9834 7.99524C89.5131 7.6536 89.7548 6.90983 90.336 6.90983H95.3189C95.5789 6.90983 95.8092 6.74245 95.8896 6.49524L97.4294 1.75623Z" fill="#C1C1C1"/>
+                      </svg>
+                      <p class="card-price text-danger p-3">$12.00</p>
+                    </div>
+                  </div>
+                  <div class="col card" style="width: 18rem;">
+                    <img src="assets/images/pop-dish-3.png" class="card-img-top pt-4" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="108" height="20" viewBox="0 0 108 20" fill="none">
+                        <path d="M9.42937 1.75623C9.60898 1.20344 10.391 1.20344 10.5706 1.75623L12.1104 6.49524C12.1908 6.74245 12.4211 6.90983 12.6811 6.90983H17.664C18.2452 6.90983 18.4869 7.6536 18.0166 7.99524L13.9854 10.9241C13.7751 11.0769 13.6871 11.3477 13.7674 11.5949L15.3072 16.3339C15.4868 16.8867 14.8541 17.3464 14.3839 17.0048L10.3527 14.0759C10.1424 13.9231 9.85762 13.9231 9.64733 14.0759L5.61609 17.0048C5.14586 17.3464 4.51317 16.8867 4.69278 16.3339L6.23258 11.5949C6.3129 11.3477 6.22491 11.0769 6.01462 10.9241L1.98337 7.99524C1.51315 7.6536 1.75481 6.90983 2.33605 6.90983H7.31893C7.57887 6.90983 7.80924 6.74245 7.88957 6.49524L9.42937 1.75623Z" fill="#FFEA28"/>
+                        <path d="M31.4294 1.75623C31.609 1.20344 32.391 1.20344 32.5706 1.75623L34.1104 6.49524C34.1908 6.74245 34.4211 6.90983 34.6811 6.90983H39.664C40.2452 6.90983 40.4869 7.6536 40.0166 7.99524L35.9854 10.9241C35.7751 11.0769 35.6871 11.3477 35.7674 11.5949L37.3072 16.3339C37.4868 16.8867 36.8541 17.3464 36.3839 17.0048L32.3527 14.0759C32.1424 13.9231 31.8576 13.9231 31.6473 14.0759L27.6161 17.0048C27.1459 17.3464 26.5132 16.8867 26.6928 16.3339L28.2326 11.5949C28.3129 11.3477 28.2249 11.0769 28.0146 10.9241L23.9834 7.99524C23.5131 7.6536 23.7548 6.90983 24.336 6.90983H29.3189C29.5789 6.90983 29.8092 6.74245 29.8896 6.49524L31.4294 1.75623Z" fill="#FFEA28"/>
+                        <path d="M53.4294 1.75623C53.609 1.20344 54.391 1.20344 54.5706 1.75623L56.1104 6.49524C56.1908 6.74245 56.4211 6.90983 56.6811 6.90983H61.664C62.2452 6.90983 62.4869 7.6536 62.0166 7.99524L57.9854 10.9241C57.7751 11.0769 57.6871 11.3477 57.7674 11.5949L59.3072 16.3339C59.4868 16.8867 58.8541 17.3464 58.3839 17.0048L54.3527 14.0759C54.1424 13.9231 53.8576 13.9231 53.6473 14.0759L49.6161 17.0048C49.1459 17.3464 48.5132 16.8867 48.6928 16.3339L50.2326 11.5949C50.3129 11.3477 50.2249 11.0769 50.0146 10.9241L45.9834 7.99524C45.5131 7.6536 45.7548 6.90983 46.336 6.90983H51.3189C51.5789 6.90983 51.8092 6.74245 51.8896 6.49524L53.4294 1.75623Z" fill="#FFEA28"/>
+                        <path d="M75.4294 1.75623C75.609 1.20344 76.391 1.20344 76.5706 1.75623L78.1104 6.49524C78.1908 6.74245 78.4211 6.90983 78.6811 6.90983H83.664C84.2452 6.90983 84.4869 7.6536 84.0166 7.99524L79.9854 10.9241C79.7751 11.0769 79.6871 11.3477 79.7674 11.5949L81.3072 16.3339C81.4868 16.8867 80.8541 17.3464 80.3839 17.0048L76.3527 14.0759C76.1424 13.9231 75.8576 13.9231 75.6473 14.0759L71.6161 17.0048C71.1459 17.3464 70.5132 16.8867 70.6928 16.3339L72.2326 11.5949C72.3129 11.3477 72.2249 11.0769 72.0146 10.9241L67.9834 7.99524C67.5131 7.6536 67.7548 6.90983 68.336 6.90983H73.3189C73.5789 6.90983 73.8092 6.74245 73.8896 6.49524L75.4294 1.75623Z" fill="#FFEA28"/>
+                        <path d="M97.4294 1.75623C97.609 1.20344 98.391 1.20344 98.5706 1.75623L100.11 6.49524C100.191 6.74245 100.421 6.90983 100.681 6.90983H105.664C106.245 6.90983 106.487 7.6536 106.017 7.99524L101.985 10.9241C101.775 11.0769 101.687 11.3477 101.767 11.5949L103.307 16.3339C103.487 16.8867 102.854 17.3464 102.384 17.0048L98.3527 14.0759C98.1424 13.9231 97.8576 13.9231 97.6473 14.0759L93.6161 17.0048C93.1459 17.3464 92.5132 16.8867 92.6928 16.3339L94.2326 11.5949C94.3129 11.3477 94.2249 11.0769 94.0146 10.9241L89.9834 7.99524C89.5131 7.6536 89.7548 6.90983 90.336 6.90983H95.3189C95.5789 6.90983 95.8092 6.74245 95.8896 6.49524L97.4294 1.75623Z" fill="#C1C1C1"/>
+                      </svg>
+                      <p class="card-price text-danger p-3">$12.00</p>
+                    </div>
+                  </div>
+                  <div class="col card text-center" style="width: 18rem;">
+                    <img src="assets/images/pop-dish-4.png" class="card-img-top pt-4" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="108" height="20" viewBox="0 0 108 20" fill="none">
+                        <path d="M9.42937 1.75623C9.60898 1.20344 10.391 1.20344 10.5706 1.75623L12.1104 6.49524C12.1908 6.74245 12.4211 6.90983 12.6811 6.90983H17.664C18.2452 6.90983 18.4869 7.6536 18.0166 7.99524L13.9854 10.9241C13.7751 11.0769 13.6871 11.3477 13.7674 11.5949L15.3072 16.3339C15.4868 16.8867 14.8541 17.3464 14.3839 17.0048L10.3527 14.0759C10.1424 13.9231 9.85762 13.9231 9.64733 14.0759L5.61609 17.0048C5.14586 17.3464 4.51317 16.8867 4.69278 16.3339L6.23258 11.5949C6.3129 11.3477 6.22491 11.0769 6.01462 10.9241L1.98337 7.99524C1.51315 7.6536 1.75481 6.90983 2.33605 6.90983H7.31893C7.57887 6.90983 7.80924 6.74245 7.88957 6.49524L9.42937 1.75623Z" fill="#FFEA28"/>
+                        <path d="M31.4294 1.75623C31.609 1.20344 32.391 1.20344 32.5706 1.75623L34.1104 6.49524C34.1908 6.74245 34.4211 6.90983 34.6811 6.90983H39.664C40.2452 6.90983 40.4869 7.6536 40.0166 7.99524L35.9854 10.9241C35.7751 11.0769 35.6871 11.3477 35.7674 11.5949L37.3072 16.3339C37.4868 16.8867 36.8541 17.3464 36.3839 17.0048L32.3527 14.0759C32.1424 13.9231 31.8576 13.9231 31.6473 14.0759L27.6161 17.0048C27.1459 17.3464 26.5132 16.8867 26.6928 16.3339L28.2326 11.5949C28.3129 11.3477 28.2249 11.0769 28.0146 10.9241L23.9834 7.99524C23.5131 7.6536 23.7548 6.90983 24.336 6.90983H29.3189C29.5789 6.90983 29.8092 6.74245 29.8896 6.49524L31.4294 1.75623Z" fill="#FFEA28"/>
+                        <path d="M53.4294 1.75623C53.609 1.20344 54.391 1.20344 54.5706 1.75623L56.1104 6.49524C56.1908 6.74245 56.4211 6.90983 56.6811 6.90983H61.664C62.2452 6.90983 62.4869 7.6536 62.0166 7.99524L57.9854 10.9241C57.7751 11.0769 57.6871 11.3477 57.7674 11.5949L59.3072 16.3339C59.4868 16.8867 58.8541 17.3464 58.3839 17.0048L54.3527 14.0759C54.1424 13.9231 53.8576 13.9231 53.6473 14.0759L49.6161 17.0048C49.1459 17.3464 48.5132 16.8867 48.6928 16.3339L50.2326 11.5949C50.3129 11.3477 50.2249 11.0769 50.0146 10.9241L45.9834 7.99524C45.5131 7.6536 45.7548 6.90983 46.336 6.90983H51.3189C51.5789 6.90983 51.8092 6.74245 51.8896 6.49524L53.4294 1.75623Z" fill="#FFEA28"/>
+                        <path d="M75.4294 1.75623C75.609 1.20344 76.391 1.20344 76.5706 1.75623L78.1104 6.49524C78.1908 6.74245 78.4211 6.90983 78.6811 6.90983H83.664C84.2452 6.90983 84.4869 7.6536 84.0166 7.99524L79.9854 10.9241C79.7751 11.0769 79.6871 11.3477 79.7674 11.5949L81.3072 16.3339C81.4868 16.8867 80.8541 17.3464 80.3839 17.0048L76.3527 14.0759C76.1424 13.9231 75.8576 13.9231 75.6473 14.0759L71.6161 17.0048C71.1459 17.3464 70.5132 16.8867 70.6928 16.3339L72.2326 11.5949C72.3129 11.3477 72.2249 11.0769 72.0146 10.9241L67.9834 7.99524C67.5131 7.6536 67.7548 6.90983 68.336 6.90983H73.3189C73.5789 6.90983 73.8092 6.74245 73.8896 6.49524L75.4294 1.75623Z" fill="#FFEA28"/>
+                        <path d="M97.4294 1.75623C97.609 1.20344 98.391 1.20344 98.5706 1.75623L100.11 6.49524C100.191 6.74245 100.421 6.90983 100.681 6.90983H105.664C106.245 6.90983 106.487 7.6536 106.017 7.99524L101.985 10.9241C101.775 11.0769 101.687 11.3477 101.767 11.5949L103.307 16.3339C103.487 16.8867 102.854 17.3464 102.384 17.0048L98.3527 14.0759C98.1424 13.9231 97.8576 13.9231 97.6473 14.0759L93.6161 17.0048C93.1459 17.3464 92.5132 16.8867 92.6928 16.3339L94.2326 11.5949C94.3129 11.3477 94.2249 11.0769 94.0146 10.9241L89.9834 7.99524C89.5131 7.6536 89.7548 6.90983 90.336 6.90983H95.3189C95.5789 6.90983 95.8092 6.74245 95.8896 6.49524L97.4294 1.75623Z" fill="#C1C1C1"/>
+                      </svg>
+                      <p class="card-price text-danger p-3 text-center">$12.00</p>
+                    </div>
+                  </div>
+                  
+            </div>
+            
+        </div>
+        </section>
+        <div class="container additional__icon">
+            <img src="assets/icons/circle-icon.svg" alt="" class="rounded float-end">
+        </div>
+        <section class="menu">
+            <div class="container">
+                <h2>Our Regular Menu Pack</h2>
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">All</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark border-danger mx-2 my-3" href="#shaurma" >Shawarma</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark border-danger mx-2 my-3" href="#kebab">Turk Kebab</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark border-danger mx-2 my-3" href="#shish-kebab">Hamburger Kebab</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark border-danger mx-2 my-3" href="#donar">Doner kebab</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark border-danger mx-2 my-3" href="#pizza">Shish kebab</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark border-danger mx-2 my-3" href="#shish-kebab">French fries Pizza</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark border-danger mx-2 my-3" href="#donar">Desserts</a>
+                  </li>
+                  </ul>
+                <div class="menu__card">
+                    <div class="row gap-3">
+                        <div id="kebab"class="col card my-5" style="width: 18rem;">
+                          <img src="assets/images/kebab-1.png" alt="" class="img-fluid rounded mx-auto d-block">
+                        <div class="card__body text-center">
+                          <h5 class="card__body-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                          <p class="card__body-price text-danger p-3 text-center">$12.00</p>
+                          </div>
+                        </div>
+                        <div id="shish-kebab" class="col card my-5"  style="width: 18rem;">
+                          <img src="assets/images/shish-kebab.png" alt="" class="img-fluid rounded mx-auto d-block">
+                        <div class="card__body text-center">
+                          <h5 class="card__body-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                          <p class="card__body-price text-danger p-3 text-center">$12.00</p>
+                          </div>
+                        </div>
+                        <div id="#shaurma" class="col card my-5"  style="width: 18rem;">
+                          <img src="assets/images/shaurma.png" alt="" class="img-fluid rounded mx-auto d-block">
+                        <div class="card__body text-center">
+                          <h5 class="card__body-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                          <p class="card__body-price text-danger p-3 text-center">$12.00</p>
+                          </div>
+                        </div>
+                        <div id="donar"class="col card my-5"  style="width: 18rem;">
+                          <img src="assets/images/donar.png" alt="" class="img-fluid rounded mx-auto d-block">
+                        <div class="card__body text-center">
+                          <h5 class="card__body-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                          <p class="card__body-price text-danger p-3 text-center">$12.00</p>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    <div id="pizza" class="row gap-3 ">
+                      <div class="col card my-5"  style="width: 18rem;">
+                        <img src="assets/images/pop-dish-2.png" alt="" class="img-fluid rounded mx-auto d-block">
+                      <div class="card__body text-center">
+                        <h5 class="card__body-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                        <p class="card__body-price text-danger p-3 text-center">$12.00</p>
+                        </div>
+                      </div>
+                      <div id="toaster" class="col card my-5"  style="width: 18rem;">
+                        <img src="assets/images/donar-2.png" alt="" class="img-fluid rounded mx-auto d-block">
+                      <div class="card__body text-center">
+                        <h5 class="card__body-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                        <p class="card__body-price text-danger p-3 text-center">$12.00</p>
+                        </div>
+                      </div>
+                      <div id="donar-2"class="col card my-5"  style="width: 18rem;">
+                        <img src="assets/images/donar-2.png" alt="" class="img-fluid rounded mx-auto d-block">
+                      <div class="card__body text-center">
+                        <h5 class="card__body-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                        <p class="card__body-price text-danger p-3 text-center">$12.00</p>
+                        </div>
+                      </div>
+                      <div id="burger" class="col card my-5"  style="width: 18rem;">
+                        <img src="assets/images/burger.png" alt="" class="img-fluid rounded mx-auto d-block">
+                      <div class="card__body text-center">
+                        <h5 class="card__body-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                        <p class="card__body-price text-danger p-3 text-center">$12.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="row gap-3 ">
+                      <div class="col card my-5"  style="width: 18rem;">
+                        <img src="assets/images/hot-dog.png" alt="" class="img-fluid rounded mx-auto d-block">
+                      <div class="card__body text-center">
+                        <h5 class="card__body-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                        <p class="card__body-price text-danger p-3 text-center">$12.00</p>
+                        </div>
+                      </div>
+                      <div class="col card my-5"  style="width: 18rem;">
+                        <img src="assets/images/kebab-2.png" alt="" class="img-fluid rounded mx-auto d-block">
+                      <div class="card__body text-center">
+                        <h5 class="card__body-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                        <p class="card__body-price text-danger p-3 text-center">$12.00</p>
+                        </div>
+                      </div>
+                      <div class="col card my-5"  style="width: 18rem;">
+                        <img src="assets/images/shish-kebab.png" alt="" class="img-fluid rounded mx-auto d-block">
+                      <div class="card__body text-center">
+                        <h5 class="card__body-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                        <p class="card__body-price text-danger p-3 text-center">$12.00</p>
+                        </div>
+                      </div>
+                      <div class="col card my-5"  style="width: 18rem;">
+                        <img src="assets/images/donar.png" alt="" class="img-fluid rounded mx-auto d-block">
+                      <div class="card__body text-center">
+                        <h5 class="card__body-title">Barbecue Shish kebab Shashlik Skewer</h5>
+                        <p class="card__body-price text-danger p-3 text-center">$12.00</p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                </div>
+                    </div>
+               </section>
+        <section class="customers">
+          <div class="container">
+            <div class="customers__title">
+              <h4>Testimony</h4>
+              <img src="images/icons/icon-cust1.svg" alt="">
+              <h2>Happy customers</h2>
+            </div>
+            
+            <div class="card-cust d-flex justify-content-center gap-3 my-5">
+              <div class="card mb-3" style="max-width: 18rem;">
+                <div class="card-body text-dark">
+                  <h5 class="card-title">Maria</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisq...</p>
+                </div>
+                <div class="card-text-data ms-3"><p>06/02/2022
+                  11:15
+                  222</p></div>
+              </div>
+              <div class="card mb-3" style="max-width: 18rem;">
+                <div class="card-body text-dark">
+                  <h5 class="card-title">Maria</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisq...</p>
+                </div>
+                <div class="card-text-data ms-3"><p>06/02/2022
+                  11:15
+                  222</p></div>
+              </div>
+              <div class="card mb-3" style="max-width: 18rem;">
+                <div class="card-body text-dark">
+                  <h5 class="card-title">Maria</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisq...</p>
+                </div>
+                <div class="card--text-data ms-3"><p>06/02/2022
+                  11:15
+                  222</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer>
+      <div class="container text-light">
+        <div class="footer__data d-flex justify-content-between ">
+          <div class="footer__adress">
+            <h4>Contact Us</h4>
+            <p>9 W 53rd St, London, NY 10019, UK</p>
+            <p>+1 212-344-1230 <br>
+              +1 212-555-1230</p>
+          </div>
+          <div class="footer__brand-desc">
+            <a href="" class="brand"><img src="assets/icons/logo.svg" alt="" class="text-center">
+            </a>
+            <p>"The best way to find yourself is to lose yourself in the service of others.”</p>
+            <div class="social-address">
+              <a href=""><img src="" alt=""></a>
+              <a href=""><img src="" alt=""></a>
+              <a href=""><img src="" alt=""></a>
+            </div>
+          </div>
+            <div class="footer__working-desc">
+              <h4>Working Hours</h4>
+              <p>Monday-Friday:
+                08:00 am -12:00 am</p>
+                <p>Saturday-Sunday:
+                  07:00am -11:00 pm</p>
+            </div>
+          </div>
+          <div class="footer__copyright text-center">
+            2022 Pop online. All Rights reserved.
+          </div>
+      </div>
+      
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/abdulazizcreator/ap-tab/main.js"></script>
+</body>
+</html>
